@@ -5,6 +5,9 @@
   <ul>
     <li><strong>Name:</strong><%= @cat.name %></li>
     <li><strong>Age:</strong><%= @cat.age %></li>
+    <% if @cat.breed.present? %>
+      <li><strong>Breed:</strong><%= @cat.breed.name %></li>
+    <% end %>
     <li><strong>Colour:</strong><%= @cat.colour %></li>
     <li><strong>Adoption Fee:</strong><%= @cat.price %></li>
     <li><strong>Rescue Date:</strong><%= @cat.rescue_date %></li>
