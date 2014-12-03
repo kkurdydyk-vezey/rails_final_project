@@ -8,6 +8,8 @@
     <li><strong>Colour:</strong><%= @cat.colour %></li>
     <li><strong>Adoption Fee:</strong><%= @cat.price %></li>
     <li><strong>Rescue Date:</strong><%= @cat.rescue_date %></li>
-    <li><strong>Description:</strong><%= @cat.description %></li></ul>
-  
+    <li><strong>Description:</strong><%= @cat.description %></li>
+    <li><%= link_to "Adopt Me!", adopt_path(:id => @cat.id) %></li>
+  </ul>
+  <p><strong><%= link_to "Back to Cats!", home_path %></strong></p>
 </p>
