@@ -1,0 +1,13 @@
+<p>
+  <% if @cat.image.present? %>
+      <%= image_tag @cat.image %>
+  <% end %>
+  <ul>
+    <li><strong>Name:</strong><%= @cat.name %></li>
+    <li><strong>Age:</strong><%= @cat.age %></li>
+    <li><strong>Colour:</strong><%= @cat.colour %></li>
+    <li><strong>Adoption Fee:</strong><%= @cat.price %></li>
+    <li><strong>Rescue Date:</strong><%= @cat.rescue_date %></li>
+    <li><strong>Description:</strong><%= @cat.description %></li></ul>
+  
+</p>
