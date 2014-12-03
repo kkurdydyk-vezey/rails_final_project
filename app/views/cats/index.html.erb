@@ -1,3 +1,5 @@
+<%= paginate @cats %>
+<br>
 <% @cats.each do |cat| %>
   <div class="cat">
     <% if cat.image.present? %>

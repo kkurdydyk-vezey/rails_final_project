@@ -1,0 +1,8 @@
+<h2>Search Results for '<%= params[:search_keywords] %>:</h2>
+<% if @cats.size.zero? %>
+  <p>No cats found.</p>
+<% else %>
+  <p><%= pluralize(@cats.size, 'Cat') %> Found.</p>
+  <% @cat = @cats.first %>
+  <%= render 'cat' %>
+<% end %>

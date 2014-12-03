@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  get 'breeds/index'
 
+  
   #GET / triggers index action of cats controller
   root 'cats#index', as: 'home'
   get 'cats' => 'cats#index'
@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   get 'adopt/:id', to: 'cats#adopt', as: 'adopt'
   # set up a route:
   # get 'path' => 'controller#action', as: 'nickname'
+  
+  get 'search_results' => 'cats#search_results', as: 'search_results'
 end
