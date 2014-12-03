@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   get 'cats' => 'cats#index'
   # GET /id triggers show command of cats controller
   # must be numeric
+
   get 'cats/:id' => 'cats#show', constraints: {id: /\d+/}, as: 'cat'
   get 'breeds' => 'breeds#index', as: 'breeds'
+  get 'breeds/:id' => 'breeds#show', constraints: { id: /\d+/}, as: 'breed'
   get 'adopt/:id', to: 'cats#adopt', as: 'adopt'
   # set up a route:
   # get 'path' => 'controller#action', as: 'nickname'

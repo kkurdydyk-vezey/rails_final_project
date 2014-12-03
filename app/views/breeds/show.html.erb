@@ -1,0 +1,9 @@
+<p>
+  <strong>Name:</strong>
+    <%= @breed.name %>
+    
+    <strong>Associated Cats:</strong>
+    <%= @breed.cats.each do |cat| %>
+        <%= link_to cat.name, cat %>
+    <% end %>
+</p>
