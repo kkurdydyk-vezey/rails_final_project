@@ -1,0 +1,10 @@
+<% @cats.each do |cat| %>
+  <div class="cat">
+    <% if cat.image.present? %>
+      <%= image_tag cat.image %>
+    <% end %>
+    <p><strong>Name:</strong><%= cat.name %></p>
+    <p><strong>Adoption Fee:</strong><%= cat.price %></p>
+    <!--<%= link_to 'Learn More About Me!', adopt_path %> -->
+  </div>
+<% end %>
