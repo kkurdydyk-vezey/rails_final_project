@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141203202847) do
+ActiveRecord::Schema.define(version: 20141209182609) do
+
+  create_table "about_pages", force: true do |t|
+    t.string   "header"
+    t.string   "image"
+    t.text     "paragraph"
+    t.text     "paragraph2"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -67,6 +76,14 @@ ActiveRecord::Schema.define(version: 20141203202847) do
   end
 
   add_index "cats", ["breed_id"], name: "index_cats_on_breed_id"
+
+  create_table "contact_pages", force: true do |t|
+    t.string   "header"
+    t.text     "hours"
+    t.text     "contact_info"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "customers", force: true do |t|
     t.string   "name"

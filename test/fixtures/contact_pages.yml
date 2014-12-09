@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  header: MyString
+  hours: MyText
+  contact_info: MyText
+
+two:
+  header: MyString
+  hours: MyText
+  contact_info: MyText
