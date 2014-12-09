@@ -14,4 +14,11 @@ class CatsController < ApplicationController
     wildcard_keywords = '%' + params[:search_keywords] + '%'
     @cats = Cat.where("name LIKE ?", wildcard_keywords)
   end
+  def aboutus
+    @aboutpage = AboutPage.first
+    
+  end
+  def contact
+    @contactpage = ContactPage.first
+  end
 end

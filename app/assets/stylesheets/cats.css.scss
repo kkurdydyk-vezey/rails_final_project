@@ -45,17 +45,7 @@ header{
     }
 }
 
-.nav ul{
-    list-style-type: none;
-    
-    li{
-        display: inline;
-        a{
-            text-decoration: none;
-            font-size: 18px;
-        }
-    }
-}
+
 
 .cat {
     border: 2px solid grey;
@@ -72,5 +62,41 @@ header{
         height: 200px;
         border: 2px solid grey;
         
+    }
+}
+
+.contact{
+    
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    background-color: #CCCCFF;
+    box-shadow: 1px 1px grey;
+    
+    h2{
+        margin-left: 5px;
+    }
+    p{
+        padding: 10px;
+    }
+}
+.about{
+    
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    display: inline-block;
+    background-color: #CCCCFF;
+    box-shadow: 1px 1px grey;
+    img{
+        float: left;
+    }
+    h2{
+        margin-left: 5px;
+    }
+    p{
+        padding: 10px;
     }
 }

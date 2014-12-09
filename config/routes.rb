@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   # GET /id triggers show command of cats controller
   # must be numeric
 
+  get 'about' => 'cats#aboutus', as: 'about'
+  get 'contactus' => 'cats#contact', as: 'contact'
+
   get 'cats/:id' => 'cats#show', constraints: {id: /\d+/}, as: 'cat'
   get 'breeds' => 'breeds#index', as: 'breeds'
   get 'breeds/:id' => 'breeds#show', constraints: { id: /\d+/}, as: 'breed'

@@ -1,11 +1,14 @@
-<p>
+<div class="breed"><p>
   <strong>Name:</strong>
-    <%= @breed.name %>
+    <%= @breed.name %></p>
     
-    <strong>Associated Cats:</strong>
-    <% @breed.cats.each do |cat| %>
-        <%= link_to cat.name, cat %>
-    <% end %>
+    <p><strong>Associated Cats:</strong>
+    <ul>
+      <% @breed.cats.each do |cat| %>
+        <li><%= link_to cat.name, cat %></li>
+        
+     <% end %>
+    </ul>
     
     <p><%= link_to "Back to breeds.", breeds_path %></p>
-</p>
+</p></div>
